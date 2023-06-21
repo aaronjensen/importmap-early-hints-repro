@@ -8,6 +8,12 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <%# This does not work: %>
+    <%= javascript_include_tag "some_module", type: "module" %>
+
+    <%# This works: %>
+    <!-- <script src="<%= path_to_javascript("some_module")%>" type="module"></script> -->
   </head>
 
   <body>

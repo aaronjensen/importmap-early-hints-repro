@@ -1,24 +1,10 @@
-# README
+# Reproduction for https://github.com/rails/rails/issues/48517
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```sh
+./install-gems.sh
+bin/rails s
+```
 
-Things you may want to cover:
+Visit http://localhost:3000 and view console
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+See `app/views/layouts/application.html.erb` for alternative that does work
